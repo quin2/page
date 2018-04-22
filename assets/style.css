@@ -1,0 +1,138 @@
+#mainSpace {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+
+.newPostCard {
+  background-color: white;
+  width: 400px;
+  height: 600px;
+  margin-top: 30px;
+  border-left: 1px solid black;
+  border-right: 3px solid black;
+  border-bottom: 3px solid black;
+  border-top: 1px solid black;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+
+  position: absolute;
+  left:400px;
+  bottom:-300px;
+
+  pointer-events: auto;
+
+  /*
+  -webkit-transition: left 0.2s;
+  transition: left 0.2s;
+  -webkit-transition-delay: 0s;
+  transition-delay: 0s;
+
+
+  */
+
+}
+
+/*
+used for showing stuff on the EDGES!!! going to have to change position attrib for middle...
+DISABLE CLICK IF MIN WORD COUNT ISNT MET!!!
+*/
+.newPostCardDisabled{
+  background-color: lightgray;
+  opacity: 0.5;
+}
+
+#topBar {
+  height: 30px;
+  background: linear-gradient(white, #F8F5E1);
+  align-items: center;
+  display: flex;
+}
+
+#topBar a:first-child {
+  margin-right: auto;
+  color:white;
+  background-color: black;
+}
+
+#topBar a {
+  max-width: 50%;
+  margin-left: 10px;
+  margin-right: 10px;
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #F8F5E1;
+  overflow: hidden;
+  height: 100%;
+  font-family: Georgia, serif;
+}
+
+input[type=text], input[type=password]{
+  width: 85%;
+}
+
+.formheader {
+  font-style: italic;
+  box-sizing: border-box;
+  font-size: 18px;
+  padding: 1px;
+}
+
+form div {
+  text-align: left;
+  margin: 5px;
+}
+
+.logotype {
+  color: white;
+  background-color: black;
+  padding: 1px;
+  margin: 0px;
+}
+
+.alert{
+  color:red;
+}
+
+.retroButton{
+  border: 1px outset black;
+  background-color: lightgray;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+input[type=submit]{
+}
+
+textarea{
+  resize: none;
+  width: calc(100% - 4px);
+  height: 20%;
+  border: none;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  outline: 0;
+}
+
+#bottomNavBar{
+  position: fixed;
+  text-align: center;
+  bottom: -330px;
+  left:400px;
+  width: 400px;
+  height: 25px;
+  background-color:white;
+  border: 1px solid black;
+}

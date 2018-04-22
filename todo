@@ -1,0 +1,59 @@
+Make New Story
+    -then base it off PHP time as well in backend post funciton
+  do PHP for website side date stuff
+  do PHP to check and post to DB!
+  add JS trigger in graphicsEngine, also return active card here with set function!
+
+My Stories
+  all personal stores in chron order
+  Zooming in opens story, click outside of story aborts shiii
+
+All stories/home
+  Same interface, show all stories in chron order
+
+Social Features
+  Include outward facing profiles (finish public view)
+  Add [ADD TO MY STORIES] button on each post
+  Add follow button?
+  Add feed that isn't global but isn't private
+    (have stuff like personal stories, all recents from followers)
+
+Mobileview
+  make seperate css file
+  update JS with relavant CSS triggures
+
+Other design stuff, odds and ends
+  -visual
+  find vector logos for common operations
+  design new logo
+  make cards move fluidly...this needs to happen w/add new card correctly
+  add image preview in card, make textarea width of it with only bottom border,etc
+
+  -onboarding
+  updateable password & email in my settings (another script!!!!!
+  account recovery
+  switch out JS with html required stuff in form inputs!!!!!
+
+  -login
+  make tokens expire after 15min
+  new user with reused email isn't throwing exception correctly, possibly
+  all page changes aren't working correctly!!!!!
+  add invite system
+  create users through mysql
+
+  -security
+  recheck login requirements on PHP side for extra security (name length, valid email, etc)
+  recheck posr requirements on the PHP side for the same reason!!
+
+  -general
+  auth/page switch logic isn't exactly functional
+
+  -unnamed redesign colors:
+  lighter: #fffafa
+  background: #f9f9f9
+  shade 1: #f2f3f4
+  shade 2: #f4f0ec
+  text box: #fffff0
+  highlight: #318ce7
+  font: #040407
+  (focused card shoud have same side borders as background!)
