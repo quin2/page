@@ -35,8 +35,8 @@
     $_SESSION['user'] = $rows[0]["id"]; //use id instead of username to save compute time
 
     //send to home!
-    header("Location:http://localhost:8888/project/home.php", true, 301); //try 302 or 303? 
-    die();
+    header("Location:http://localhost:8888/project/home.php", true, 301); //try 302 or 303?
+    exit();
   }
   else{
     //update guess # on DD

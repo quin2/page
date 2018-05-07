@@ -18,16 +18,16 @@
 
 
   <div id="topBar">
-    <a href="home.php" alt="go home">page alpha</a>
+    <a href="home.php" class="logotype" alt="go home">page alpha</a>
     <a href="newpost.php" alt="make new story">+story</a>
     <a href="profile.php" alt="your profile">you</a>
   </div>
 
- <form id="newPostForm" method="post" action="scripts/processPost.php">
+ <form enctype="multipart/form-data" id="newPostForm" method="post" action="scripts/processPost.php">
   <div id="mainSpace">
     <div class="newPostCard">
       <h2 class="logotype" id="theTitle">your story</h2>
-        <input type=text id="sTitle" name"postTitle" maxlength="40" value="post title"/>
+        <input type=text id="sTitle" name="postTitle" maxlength="40" value="post title"/>
         <div>
           <label for="sTitle" id="sTitleLabel" hidden>make it a little longer...</label>
         </div>
@@ -44,14 +44,15 @@
 <div id="cardFiller" hidden>
   <h2 class="logotype">today</h2>
   <input class="postDate" type="hidden" name="cardDate[]" value="currentDate" />
-  <label for="entryText" id="entryTextLabel">400 words left</label>
-  <textarea form="newPostForm" name="postText[]" id="entryText" rows="4" cols="20" maxlength="750">
+  <textarea form="newPostForm" name="postText[]" id="entryText" class="postText" rows="4" cols="20" maxlength="750">
     write something!
   </textarea>
+  <label for="entryText" id="entryTextLabel" class="entryTextCount">0/750</label>
 
   <div>
     <label for="attachImage">add a picture next:</label>
   </div>
+  <input type="hidden" name="MAX_FILE_SIZE" value="3145728" />
   <input type="file" name="pic[]" id="attachImage" accept="image/*">
 </div>
 </html>

@@ -18,7 +18,7 @@ if(isset($SESSION_["auth"])){
   <body>
 
     <div id="topBar">
-      <a href="login.php" alt="go home">page alpha</a>
+      <a href="login.php" alt="go home" class="logotype">page alpha</a>
     </div>
 
     <div id="mainSpace">
@@ -63,25 +63,18 @@ if(isset($SESSION_["auth"])){
               echo ('<div class="alert">That username/email is already in use!</div>');
             }
           ?>
-          <div>
-            <label for="email_newuser">email address:</label>
-            <input name="email" id="email_newuser" type="text" size="12" placeholder="@" maxlength="32"/>
-          </div>
 
-          <div>
-            <label for="password_newuser">password:</label>
-            <input name="password" id ="password_newuser" type="password" size="12" placeholder="******" maxlength="70"/>
-          </div>
+          <label for="email_newuser">email address:</label>
+          <input name="email" id="email_newuser" type="text" size="12" placeholder="@" maxlength="32"/>
 
-          <div>
-            <label for="password_newuser_reenter">retype password:</label>
-            <input id ="password_newuser_reenter" type="password" size="12" placeholder="******" maxlength="70"/>
-          </div>
+          <label for="password_newuser">password:</label>
+          <input name="password" id ="password_newuser" type="password" size="12" placeholder="******" maxlength="70"/>
 
-          <div>
-            <label for="email">username:</label>
-            <input name="uname" id="uname" type="text" size="12" placeholder="you" maxlength="16"/>
-          </div>
+          <label for="password_newuser_reenter">retype password:</label>
+          <input id ="password_newuser_reenter" type="password" size="12" placeholder="******" maxlength="70"/>
+
+          <label for="email">username:</label>
+          <input name="uname" id="uname" type="text" size="12" placeholder="you" maxlength="16"/>
 
           <input type="submit" value="create new account" id ="submitButton" class= "retroButton" disabled/>
         </form>

@@ -26,7 +26,7 @@
   </head>
   <body>
     <div id="topBar">
-      <a href="login.php" alt="go home">page alpha</a>
+      <a href="login.php" alt="go home" class="logotype">page alpha</a>
       <a href="newpost.php" alt="new post">+story</a>
       <a href="scripts/logout.php" alt="log out">logout!</a>
     </div>
@@ -49,7 +49,7 @@
           </div>
 
           <div class="formheader">
-            ui: retro
+            ui: futura free
           </div>
       </div>
     </div>

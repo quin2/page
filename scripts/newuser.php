@@ -1,5 +1,5 @@
 <?php
-  include 'scripts/common.php';
+  include 'common.php';
 
   $username = htmlentities($_POST['uname'], ENT_QUOTES);
   $email = htmlentities($_POST['email'], ENT_QUOTES);
@@ -47,7 +47,7 @@
 
   //now redirect user back to home!
   echo('success! ');
-  echo('click <a href="login.php" alt="login">here</a> to log in');
+  echo('click <a href="../login.php" alt="login">here</a> to log in');
 
   //function to throw redirect back to login page if user with same username/pass exists
   //you will need to fix this before deployment

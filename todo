@@ -1,22 +1,14 @@
 Make New Story
-    -then base it off PHP time as well in backend post funciton
-  do PHP for website side date stuff
-  do PHP to check and post to DB!
-  add JS trigger in graphicsEngine, also return active card here with set function!
+  -add page number
 
 My Stories
-  all personal stores in chron order
+  -fix inability to clickk on main card to open it
   Zooming in opens story, click outside of story aborts shiii
-
-All stories/home
-  Same interface, show all stories in chron order
 
 Social Features
   Include outward facing profiles (finish public view)
   Add [ADD TO MY STORIES] button on each post
   Add follow button?
-  Add feed that isn't global but isn't private
-    (have stuff like personal stories, all recents from followers)
 
 Mobileview
   make seperate css file
@@ -44,9 +36,12 @@ Other design stuff, odds and ends
   -security
   recheck login requirements on PHP side for extra security (name length, valid email, etc)
   recheck posr requirements on the PHP side for the same reason!!
+  unicode only email/pass
 
   -general
   auth/page switch logic isn't exactly functional
+  possible close/open connection?
+  fucks up when account doesnt exsist
 
   -unnamed redesign colors:
   lighter: #fffafa
